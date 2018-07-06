@@ -2,11 +2,21 @@
 
 Example of a [Create-react-app](https://github.com/facebook/create-react-app) build with [Maven](https://maven.apache.org/index.html) and deployed as WAR file to a [Docker Wildfly server](https://hub.docker.com/r/jboss/wildfly/).
 
-## Run
+## Prepare
+
+```bash
+npm install
+```
+
+## Build
 
 ```bash
 mvn clean install
+```
 
+## Run
+
+```bash
 docker run -it -p 8080:8080 -v $PWD/deployments/:/opt/jboss/wildfly/standalone/deployments/ jboss/wildfly
 ```
 
