@@ -11,7 +11,7 @@ npm install
 ## Build
 
 ```bash
-mvn clean install
+mvn clean package
 ```
 
 ## Run
